@@ -5,7 +5,7 @@ ECCV
 ### 摘要
 雾霾和下雨等恶劣天气条件会破坏捕获图像的质量，导致在干净图像上训练的检测网络在这些图像上表现不佳。为了解决这个问题，我们提出了一种无监督的基于先验的域对抗对象检测框架，用于使检测器适应雾霾和多雨的条件。特别是，我们使用通过图像形成原理获得的特定于天气的先验知识来定义一种新颖的先验对抗性损失。用于训练适应过程的先验对抗性损失旨在减少特征中特定于天气的信息，从而减轻天气对检测性能的影响。此外，我们在对象检测管道中引入了一组残余特征恢复块，以消除特征空间的扭曲，从而实现进一步的改进。对雨天和雾霾条件下的各种数据集（Foggy-Cityscapes、RainyCityscapes、RTTS 和 UFDD）进行的评估证明了所提出方法的有效性。
 ### 网络
-![da412ec2bb67b269566351dc8bbdbd76.png](:/eeff020885c14266aaa1d382e3b8d606)
+[![pF9GeBD.md.png](https://s11.ax1x.com/2024/01/10/pF9GeBD.md.png)](https://imgse.com/i/pF9GeBD)
 
 ## One-Shot Unsupervised Domain Adaptation With Personalized Diffusion Models
 CVPR
@@ -15,15 +15,15 @@ CVPR
 数据生成阶段：在这个阶段，作者利用微调后的DM模型，通过给定一些类别名称作为文本提示，来生成一个包含多样化和真实性的目标域图像的数据集。
 自适应分割阶段：在这个阶段，作者将标记的源域数据和生成的无标记的目标域数据结合起来，使用一个UDA方法（如DAFormer或HRDA）来训练一个分割模型。
 ## 网络图
-![f6e8faa48e6afc14d92be8edba8a5207.png](:/7a948364aa804fd5bc8acdaa7a0ba882)
+[![pF9GuAH.md.png](https://s11.ax1x.com/2024/01/10/pF9GuAH.md.png)](https://imgse.com/i/pF9GuAH)
 
 ## A domain adaptation YOLOv5 model for industrial defect inspection
 Measurement
 ### 网络图
-![55638317c5e1c54923e22e4ec6ba9578.png](:/b83848572fa54f7488c9a992c5b1de51)
-![eab4841ef68fef6cc9f0fbc0ff4fbeea.png](:/e2fb9747e719417cbd4d86051bacd6aa)
+[![pF9G13t.md.png](https://s11.ax1x.com/2024/01/10/pF9G13t.md.png)](https://imgse.com/i/pF9G13t)
+[![pF9GYDS.md.png](https://s11.ax1x.com/2024/01/10/pF9GYDS.md.png)](https://imgse.com/i/pF9GYDS)
 其实网络创新方面是几乎没有的，用的就是yolo作为主干网络，最大平均差异 (MMD) [38,39] 在 DAYOLOv5 中应用，以最小化源域和目标域之间的距离。但是贵在实验做得比较丰富。还是有些启发的。
-![be1aade93cd1bde9d68cb4de5fed540c.png](:/93d5f6884422488cbdde8454c9138b65)
+[![pF9GaNj.md.png](https://s11.ax1x.com/2024/01/10/pF9GaNj.md.png)](https://imgse.com/i/pF9GaNj)
 这篇文章做的是钢材的检测，采用的不是UDA的思想，他要做的是在少量的带标注目标域的数据的情况下，也能在目标域下有较好的检测效果。
 
 ## Domain Adaptive Object Detection for Autonomous Driving under Foggy Weather
@@ -31,4 +31,4 @@ CCFB：Winter Conference on Applications of Computer Vision
 ### 摘要
 大多数自动驾驶的目标检测方法通常假设训练数据和测试数据之间具有一致的特征分布，但当天气差异很大时，情况并非总是如此。由于域间隙，在晴朗天气下训练的目标检测模型在雾天可能不够有效。本文提出了一种新颖的域自适应目标检测框架，用于雾天自动驾驶。我们的方法利用图像级和对象级自适应来减少图像风格和对象外观的域差异。为了进一步增强模型在具有挑战性的样本下的能力，我们还提出了一个新的对抗性梯度反转层，对困难样本进行对抗性挖掘以及领域适应。此外，我们建议通过数据增强生成辅助域，以实施新的域级度量正则化。公共基准的实验结果表明了该方法的有效性和准确性。
 ### 网络结构图
-![5e01b48c3f4fe3e93e3a62ea900cb8e6.png](:/bbc827241bb34efc8e1b0342c203383e)
+[![pF9G0Cn.md.png](https://s11.ax1x.com/2024/01/10/pF9G0Cn.md.png)](https://imgse.com/i/pF9G0Cn)
