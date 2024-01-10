@@ -22,8 +22,11 @@ Measurement
 ### 网络图
 [![pF9G13t.md.png](https://s11.ax1x.com/2024/01/10/pF9G13t.md.png)](https://imgse.com/i/pF9G13t)
 [![pF9GYDS.md.png](https://s11.ax1x.com/2024/01/10/pF9GYDS.md.png)](https://imgse.com/i/pF9GYDS)
+
 其实网络创新方面是几乎没有的，用的就是yolo作为主干网络，最大平均差异 (MMD) [38,39] 在 DAYOLOv5 中应用，以最小化源域和目标域之间的距离。但是贵在实验做得比较丰富。还是有些启发的。
+
 [![pF9GaNj.md.png](https://s11.ax1x.com/2024/01/10/pF9GaNj.md.png)](https://imgse.com/i/pF9GaNj)
+
 这篇文章做的是钢材的检测，采用的不是UDA的思想，他要做的是在少量的带标注目标域的数据的情况下，也能在目标域下有较好的检测效果。
 
 ## Domain Adaptive Object Detection for Autonomous Driving under Foggy Weather
